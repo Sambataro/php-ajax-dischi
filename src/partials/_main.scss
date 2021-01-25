@@ -1,0 +1,38 @@
+main
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: $main_width;
+  background-color: $mainColor;
+
+
+  .cd
+  {
+    @include flex_column;
+    justify-content: flex-start;
+    width: $width_cd_calc;
+    height: $height-cd;
+    color: white;
+    margin: 10px;
+    padding: $cd_padding;
+    text-align: center;
+    background-color: $cd_background;
+    border-radius: 10px;
+    img
+    {
+      width: $img-width;
+      padding: $img-padding;
+    }
+  }
+
+  .info {
+    @include flex_column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: $info_section_height;
+    margin: 10px 0;
+    font-size: $font12;
+  }
+}
