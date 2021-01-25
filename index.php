@@ -1,4 +1,4 @@
-<?php include __DIR__ . "/database.php"; ?>
+<?php include "database.php"; ?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -8,10 +8,8 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-    <header>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0QwjSeZvgA57NRJ9AotM5No0mjK7YZKZbNQ&usqp=CAU" alt="logo-spotify">
-    </header>
     <div id="app">
+      <?php include "partials/header.php" ?>
       <main>
         <?php foreach ($discs as $disc) { ?>
         <div class="cd">
