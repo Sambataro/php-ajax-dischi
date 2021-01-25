@@ -7,12 +7,9 @@ var app = new Vue({
     logo: "spotify.png",
     discs: [],
     genres: [],
-    genreSelection: "",
   },
 
   methods: {
-
-
 
   },
 
@@ -21,6 +18,7 @@ var app = new Vue({
     axios.get("server.php")
     .then(function (response) {
       self.discs = response.data;
+
 
       self.discs.forEach(function (item) {
         if (self.genres.includes(item.genre) == false) {

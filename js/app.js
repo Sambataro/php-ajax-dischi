@@ -1852,8 +1852,7 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
   data: {
     logo: "spotify.png",
     discs: [],
-    genres: [],
-    genreSelection: ""
+    genres: []
   },
   methods: {},
   mounted: function mounted() {
