@@ -1,3 +1,3 @@
 <header>
-  <img :src="logo" alt="logo-spotify">
+  <img :src="'img/' + logo" alt="logo-spotify">
 </header>

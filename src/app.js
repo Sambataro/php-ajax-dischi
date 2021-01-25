@@ -4,7 +4,7 @@ const axios = require('axios').default;
 var app = new Vue({
   el: '#app',
   data: {
-    logo: "img/spotify.png",
+    logo: "spotify.png",
     discs: [],
   },
   mounted: function mounted() {

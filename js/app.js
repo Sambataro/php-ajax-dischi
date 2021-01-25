@@ -1850,7 +1850,7 @@ var axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js").de
 var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
   el: '#app',
   data: {
-    logo: "img/spotify.png",
+    logo: "spotify.png",
     discs: []
   },
   mounted: function mounted() {
