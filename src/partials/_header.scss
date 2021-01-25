@@ -1,10 +1,13 @@
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
   background-color: $header_footer_color;
   @include header_footer_size;
 
   img
   {
-    padding-left: $img-padding;
     width: 10%;
   }
 }

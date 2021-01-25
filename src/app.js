@@ -6,11 +6,27 @@ var app = new Vue({
   data: {
     logo: "spotify.png",
     discs: [],
+    genres: [],
+    genreSelection: "",
   },
+
+  methods: {
+
+
+
+  },
+
   mounted: function mounted() {
     var self = this;
-    axios.get("http://localhost:8888/php-ajax-dischi/server.php").then(function (response) {
+    axios.get("server.php")
+    .then(function (response) {
       self.discs = response.data;
+
+      self.discs.forEach(function (item) {
+        if (self.genres.includes(item.genre) == false) {
+          self.genres.push(item.genre);
+        }
+      });
      });
   },
 });

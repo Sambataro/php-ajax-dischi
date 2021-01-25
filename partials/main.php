@@ -1,6 +1,5 @@
 <main>
   <div class="cd" v-for="disc in discs">
-
     <img :src=disc.poster :alt=disc.title>
     <div class="info">
       <h2>{{ disc.title }}</h2>
