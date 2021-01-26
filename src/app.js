@@ -6,25 +6,35 @@ var app = new Vue({
   data: {
     logo: "spotify.png",
     discs: [],
-    genres: [],
+    genre: "",
   },
 
-  methods: {
-
-  },
-
-  mounted: function mounted() {
+  mounted: function() {
     var self = this;
     axios.get("server.php")
     .then(function (response) {
       self.discs = response.data;
 
-
-      self.discs.forEach(function (item) {
-        if (self.genres.includes(item.genre) == false) {
-          self.genres.push(item.genre);
-        }
-      });
      });
   },
+
+  methods: {
+
+    filter: function() {
+      var self = this;
+      axios.get("server.php",
+      {
+        params: {
+          genre: self.genre
+
+        }
+      }
+    )
+    .then(function(response) {
+      self.discs = response.data;
+    });
+
+    }
+
+  }
 });

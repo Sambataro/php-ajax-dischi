@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>vue php dichi</title>
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
@@ -10,7 +10,6 @@
       <?php include "partials/header.php" ?>
       <?php include "partials/main.php" ?>
     </div>
-
     <script src="js/app.js" charset="utf-8"></script>
   </body>
 </html>
